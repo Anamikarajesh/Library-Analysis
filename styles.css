@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.8rem;
+}
+
+/* Main Content */
+main {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Section Styles */
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+/* Flexbox layout for text and image */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #ecf0f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-left: 5px solid #2c3e50;
+    text-align: left;
+}
+
+/* Image positioning */
+.box img {
+    width: 100%;
+    max-width: 600px; /* Enlarged from 400px */
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Library image styling */
+.library-image {
+    width: 100%;
+    max-width: 1000px; /* Enlarged from 800px */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box img {
+        max-width: 100%;
+    }
+}
+
+/* Text content below image */
+.box p {
+    flex: 1;
+}
+
+/* List Styling */
+ul {
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    list-style-type: disc;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Conclusion */
+.conclusion {
+    background: #d4e0ee;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border-left: 5px solid #babbfd;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .box {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .box img {
+        margin-top: 10px;
+        width: 100%;
+        max-width: 600px;
+    }
+}
+/* Animations for the Library Analysis Page */
+
+/* Fade-in effect for sections */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth hover effect for boxes */
+.box {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header text animation */
+header h1 {
+    animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Button hover animation */
+button {
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1abc9c;
+    transform: scale(1.1);
+}
+
+/* Image zoom effect */
+.library-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.library-image:hover {
+    transform: scale(1.1);
+}
+
+/* List items slide-in effect */
+li {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideInRight 0.6s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.box h3 {
+    font-size: 1.5rem; /* Increased from default */
+    color: #2c3e50;
+    font-weight: bold;
+}
+/* Footer Styles */
+footer {
+    width: 100%; 
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    font-family: "Playfair Display SC"
+}
